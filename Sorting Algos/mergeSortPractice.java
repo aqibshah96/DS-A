@@ -14,7 +14,7 @@ public class mergeSortPractice {
         // right half starts at one higher than midpoint
         int[] rightHalf = new int[array.length - midpoint];
 
-        // now to fill left handed array
+        // now to fill left side of array
         for (int i = 0; i < midpoint; i++) {
             leftHalf[i] = array[i];
         }
@@ -32,7 +32,7 @@ public class mergeSortPractice {
 
     }
 
-    // function to merge them together
+    // now we merge them together
     public static void merge(int[] array, int[] left, int[] right) {
         // need three counters because we have three arrays and can't tell when they'll
         // be empty
